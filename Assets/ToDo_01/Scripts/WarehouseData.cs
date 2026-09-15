@@ -73,7 +73,7 @@ public sealed class WarehouseData : MonoBehaviour , IWarehouseData
 
     public ForkliftBox PeekOutgoing()
     {
-        if (incomingQueue.Count == 0)
+        if (outgoingQueue.Count == 0)
         {
             return null;
         }
@@ -83,7 +83,7 @@ public sealed class WarehouseData : MonoBehaviour , IWarehouseData
 
     public ForkliftBox DequeueOutgoing()
     {
-        if (incomingQueue.Count == 0)
+        if (outgoingQueue.Count == 0)
         {
             return null;
         }
